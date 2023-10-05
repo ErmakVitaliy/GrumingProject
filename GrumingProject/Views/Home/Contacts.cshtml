@@ -1,0 +1,19 @@
+﻿@model TextField
+@{
+    ViewBag.Title = Model.MetaTitle;
+    ViewBag.Description = Model.MetaDescription;
+    ViewBag.Keywords = Model.MetaKeywords;
+}
+@*<div>
+    @Html.Raw(Model.Text)
+</div>*@
+<div class="main-service">
+    <h1 class="about-title">О себе</h1>
+    <p>@Html.Raw(Model.Text)</p>
+    <h2>Где нас найти</h2>
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A890b735fd35b5c7a05d86a629506420593b801f4ca2ab715bef504956327a23c&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+</div>
+<div class="sidebar-foto">
+    <img src="/img/Фото автора.png" alt="">
+
+</div>

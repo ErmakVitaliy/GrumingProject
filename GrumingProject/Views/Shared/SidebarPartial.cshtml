@@ -1,0 +1,23 @@
+﻿
+@*<div class="sidebar">
+    <ul>
+        <h2 class="sidebar-title">Наши услуги</h2>
+        <li>
+            <h3 class="h3-main-text">Стрижка животных</h3>
+            <img src="/img/лев.jpg" alt="">
+        </li>
+        <li>
+            <h3 class="h3-main-text">Передержка животных</h3>
+            <img src="/img/b53ee1c14ca8269668c62d1db1d5d846.jpg" alt="">
+        </li>
+        <li>
+            <h3 class="h3-main-text">Вязка собак</h3>
+            <img src="/img/вязка.jpg" alt="">
+        </li>
+    </ul>
+</div>*@
+<div class="sidebar">
+    <cache>
+        @(await Component.InvokeAsync<SidebarViewComponent>())
+    </cache>
+</div>

@@ -1,0 +1,214 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #FFF5EE;
+}
+.header {
+    background-color: #aeaf85;
+    min-height: 100px;
+    padding-top: 15px;
+}
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
+}
+.title a{
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    font-size: 32px;
+    color: black;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+.nav {
+    display: flex;
+    list-style: none;
+    
+}
+.nav a{
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 95px;
+    text-decoration: none;
+    font-size: 32px;
+    color: black;
+    padding: 17px 10px;
+}
+.nav a:hover{
+    background-color: #888d6c;
+    border-radius: 7px;
+}
+
+/* Главная секция */
+
+.main {
+    background-color: #FFF5EE;
+}
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+.main-service {
+}
+.main-title {
+    font-family: 'Ubuntu', sans-serif;
+}
+.main-img {
+}
+.main-decription {
+}
+.sidebar {
+    width: 200px;
+}
+.sidebar-title{
+    font-family: 'Ubuntu', sans-serif;
+}
+.sidebar ul {
+    list-style: none;
+}
+.sidebar ul img{
+    width: 100%;
+}
+.h3-main-text {
+    font-family: 'Ubuntu', sans-serif;
+}
+.big-image-list{
+    list-style:none;
+    padding:0;
+   /* width:100%;*/
+}
+/* Футер */
+.footer {
+    background-color: #F5F5DC;
+    min-height: 100px;
+    padding-top: 10px;
+}
+.footer li{
+    display: flex;
+    align-items: center;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+.copyright{
+    font-size: 22px;
+}
+.footer-content ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none; 
+}
+.footer-content a, .copyright {
+    font-size: 32px;
+    font-family: 'Caveat', cursive;
+}
+
+/* Контакты */
+.about-title+p{
+    max-width: 70%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+}
+
+.sidebar-foto img{
+    margin-top: 70px;
+    width: 300px;
+    height: 400px;
+    
+}
+@media screen and (max-width:1157px) {
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items:center;
+    }
+
+    .main-img {
+        width: 100%;
+    }
+        .main-img h4, .main-img p{
+            padding-left: 10px;
+        }
+    img.left{
+        width:100%;
+    }
+    .sidebar-foto{
+        order:-1;
+        align-items:center;
+    }
+}
+
+@media screen and (max-width:904px) {
+    .main-service {
+        padding-left:10px;
+    }
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .nav {
+        flex-direction: column;
+        text-align: left;
+    }
+
+        .nav a {
+            margin-left: 0;
+            padding: 3px 5px;
+        }
+
+    .footer-content ul {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .main-title {
+        text-align: center;
+    }
+    .main-content {
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+
+@media screen and (max-width:516px) {
+    .main-service{
+        width:100%;
+    }
+}

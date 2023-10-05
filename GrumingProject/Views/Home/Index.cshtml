@@ -1,0 +1,14 @@
+﻿@*<div class="main-service">
+    <h1 class="main-title">Стрижка животных</h1>
+    <img class="main-img" src="/img/лев.jpg" alt="Услуга"><br>
+    <p class="main-decription">Описание услуги</p>
+</div>*@
+@model TextField
+@{
+    ViewBag.Title = Model.MetaTitle;
+    ViewBag.Description = Model.MetaDescription;
+    ViewBag.Keywords = Model.MetaKeywords;
+}
+<div>
+    @Html.Raw(Model.Text)
+</div>
